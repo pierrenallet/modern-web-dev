@@ -1,0 +1,21 @@
+<html>
+	<head>
+				<script src="angular.js"></script>
+		<script src="app.js"></script>
+
+	</head>
+	<body ng-app="calculator" 
+		ng-controller="calculator">
+		<input ng-model="a"/>
+		<input ng-model="b"/>
+		<input type="button" value="Add"
+			 ng-click="add()" />
+		<input type="button" value="Divide"
+			 ng-click="divide()" ng-disabled="b == 0"/>
+		<input type="button" value='Subtract'
+			onclick="onClick()"/>
+		
+		<div>{{result}}</div>
+	</body>
+
+</html>
