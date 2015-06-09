@@ -4,7 +4,7 @@
 		<script src="app2.js"></script>
 	</head>
 	<body ng-app="shopping" ng-controller="products">{{message}}
-		<div ng-repeat="product in products">{{product.name}} -> {{product.price | currency}}
+		<div ng-repeat="product in products">{{product.name}} -> {{product.price | myCurrency}}
 			<button ng-click="removeProduct(product)">Remove</button>
 		</div>
 		<input name="new product name" ng-model="newProductName" />

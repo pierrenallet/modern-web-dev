@@ -53,11 +53,13 @@ var productsController = function($scope, currencyConverter){
 		$scope.newProductPrice = "";
 	};
 };
-/*
 
-myApp.filter("myCurrency", function(value)
+
+myApp.filter("myCurrency", function(){
+	return function(value)
 	{
-		return value;
-	});*/
+		return "$ " + value + "";
+	};
+});
 
 myApp.controller("products", productsController);
