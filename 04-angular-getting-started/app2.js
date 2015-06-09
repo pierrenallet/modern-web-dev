@@ -54,11 +54,9 @@ var productsController = function($scope, currencyConverter){
 	};
 };
 
-
 myApp.filter("myCurrency", function(){
-	return function(value)
-	{
-		return "$ " + value + "";
+	return function(value){
+		return "$ " + value + "!";
 	};
 });
 
