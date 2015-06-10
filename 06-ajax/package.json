@@ -1,0 +1,17 @@
+{
+  "name": "TestingAngularJS",
+  "version": "1.0.0",
+  "description": "Lab exercise for testing AngularJS code",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~3.4.8",
+    "underscore": "~1.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "karma start",
+    "start": "node server.js"
+  },
+  "author": "Maurice de Beijer",
+  "license": "ISC"
+}

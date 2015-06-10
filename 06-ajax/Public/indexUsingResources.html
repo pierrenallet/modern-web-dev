@@ -1,0 +1,17 @@
+<html>
+	<body ng-app = "movies" ng-controller = "moviesController">
+		<div>hello</div>
+		<h1>
+			{{currentMovie.title}}
+			</h1>
+		<ul>
+			<li ng-repeat= "movie in movies">
+				<div>{{movie.title}}</div>
+			</li>
+		</ul>
+		<script src="angular.js"></script>
+		<script src="angular-resource.js"></script>
+		<script src="appUsingResources.js"></script>
+	</body>
+
+</html>
