@@ -1,0 +1,7 @@
+<div>These are the restaurants in the area</div>
+<div>
+	<button ng-click="goToBestRestaurant()">Go to best restaurant</button>	
+	<div ng-repeat="restaurant in restaurants">
+		<a href="#/restaurants/{{restaurant.id}}"> {{restaurant.name}}</a>
+	</div>
+</div>
